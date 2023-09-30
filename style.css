@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Kaushan+Script&family=Notable&family=Poiret+One&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Tilt+Prism&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #000, #000000d9);;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #fff;
+}
+.container h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.calculator{
+    border: 2px solid #00000028;
+    box-shadow: 0px 0px 10px rgb(124 124 124 / 24%);
+    padding: 30px 40px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.calculator .inputbox{
+    width: 100%;
+}
+.calculator input{
+    border-bottom: 2px solid #fff;
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    padding: 15px 10px;
+    box-shadow: none;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.calculator input:focus{
+    outline: none;
+}
+button.button{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: transparent;
+    margin: 7px;
+    width: 60px;
+    font-size: 20px;
+}
+button.equalbtn{
+    width: 135px;
+}
+button.bold{
+    font-weight: 600;
+    color: cyan;
+}
+
+@media screen and (max-width:400px){
+    .calculator{
+        padding: 15px 18px;
+    }
+    .container h1{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+    }
+    button.button{
+        padding: 5px 8px;
+        margin: 2px;
+        width: 25px;
+        font-size: 8px;
+    }   
+    .calculator input {
+        padding: 10px 10px;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .calculator button.equalbtn{
+        width: 53px;
+    }
+}
